@@ -28,7 +28,7 @@ let pointsP2 = [0];
 
 const throwDice = function () {
   const rollNumber = Math.floor(Math.random() * 6) + 1;
-  dice.src = `./dice${rollNumber}.png`;
+  dice.src = `./img/dice${rollNumber}.png`;
   dice.classList.remove("hide");
 
   if (rollNumber > 1 && p1.classList.contains("active")) {
@@ -94,7 +94,7 @@ const newGame = function () {
   p2CurrentScore.textContent = 0;
   p2Score.textContent = 0;
   p2name.textContent = "player 2";
-  dice.src = `./dice1.png`;
+  dice.src = `.img/dice1.png`;
   p1.classList.remove("win");
   p1.classList.add("active");
   p2.classList.remove("win");
